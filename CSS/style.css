@@ -32,6 +32,13 @@ header {
     border-radius: .25rem;
     width: 210px;
     padding-bottom: 3rem;
+   
+    
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
 }
 .div-menu{
     text-align: right;
@@ -213,15 +220,18 @@ h3{
 
 
 .div-p-a {
+    position: relative;
     margin-bottom: 4rem;
     background-color: burlywood;
     height: 260px;
     width: 26rem;
     padding-top: 1rem;
+    overflow: hidden;
 }
 .imgPor {
     text-align: center;
     height: 280px;
+    transition: all 0.6s;
     
 }
 
@@ -237,11 +247,13 @@ h3{
 }
 
 .div-pg {
+    position: relative;
     margin-bottom: 4rem;
     background-color:gray ;
     height: 260px;
     width: 26rem;
     padding-top: 1rem;
+    overflow: hidden;
 }
 
 .footer {
@@ -260,6 +272,60 @@ h3{
     width: 100px;
 }
 
+
+.portafolio-text{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    color: var(--main-blancoffffff-color);
+    transform: translateY(100%);
+    transition: all 0.6s ease-out;
+}
+
+.portafolio-text p{
+    text-align: center;
+}
+.de-xp {
+    color: var(--main-blancoffffff-color);
+}
+
+.div-p-a:hover .portafolio-text{
+    transform: translateY(0%);
+
+}
+
+.div-pg:hover .portafolio-text{
+    transform: translateY(0%);
+
+}
+
+.div-pg:hover .imgPor {
+    transform: scale(1.15);
+}
+
+.div-p-a:hover .imgPor {
+    transform: scale(1.15);
+}
+.ico-p:hover{
+    transition: 2s ease-in-out;
+    transform: scale(2.0);
+}
+
+.icons:hover{
+    -webkit-transform: rotateY(360deg);
+    transition: 2s ease-in-out;
+}
+
+.icons-f:hover{
+    -webkit-transform: rotateY(360deg);
+    transition: 3s ease-in-out;
+}
+
+.nav_li:hover {
+    transition: 0.6s ease-in-out;
+    transform: scale(1.16);
+}
 @media (max-width: 770px){
     .nav_label{
         display: block;
@@ -315,6 +381,7 @@ h3{
     }
 
     .container-img{
+        position: relative;
         width: 450px;
     }
 
